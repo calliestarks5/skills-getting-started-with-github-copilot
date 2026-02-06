@@ -21,10 +21,20 @@
   font-weight: bold;
 }
 
+/* Hide bullet points and style delete icon */
 .activity-card .participants-list {
-  list-style-type: disc;
-  padding-left: 22px;
+  list-style-type: none;
+  padding-left: 0;
   margin: 0;
+}
+
+.delete-btn {
+  color: #c00;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
 }
 
 .activity-card .participants-list li {
