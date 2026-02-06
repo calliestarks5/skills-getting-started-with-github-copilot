@@ -3,6 +3,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const activitySelect = document.getElementById("activity");
   const signupForm = document.getElementById("signup-form");
   const messageDiv = document.getElementById("message");
+  // Add extra activities to the dropdown (for demonstration)
+  const extraActivities = [
+    // Sports
+    { name: "Basketball", type: "sport" },
+    { name: "Swimming", type: "sport" },
+    // Artistic
+    { name: "Painting", type: "artistic" },
+    { name: "Photography", type: "artistic" },
+    // Intellectual
+    { name: "Chess Club", type: "intellectual" },
+    { name: "Book Club", type: "intellectual" }
+  ];
+
+  extraActivities.forEach(({ name }) => {
+    const exists = Array.from(activitySelect.options).some(opt => opt.value === name);
+    if (!exists) {
+      const option = document.createElement("option");
+      option.value = name;
+      option.textContent = name;
+      activitySelect.appendChild(option);
+    }
+  });
 
   // Function to fetch activities from API
   async function fetchActivities() {
