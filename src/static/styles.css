@@ -5,6 +5,44 @@
   font-family: Arial, sans-serif;
 }
 
+/* Participants section inside activity cards */
+.activity-card .participants-section {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #e3eafc;
+  border-radius: 4px;
+  border: 1px solid #c5cae9;
+}
+
+.activity-card .participants-section h5 {
+  margin-bottom: 8px;
+  color: #3949ab;
+  font-size: 1.05em;
+  font-weight: bold;
+}
+
+/* Hide bullet points and style delete icon */
+.activity-card .participants-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.delete-btn {
+  color: #c00;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.activity-card .participants-list li {
+  margin-bottom: 4px;
+  color: #283593;
+  font-size: 0.98em;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
